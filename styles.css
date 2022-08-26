@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border-color: red;
+  border-style: solid; */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+  background: #ffffff;
+}
+
+.header img {
+    max-height: auto;
+    max-width: 40%;
+}
+
+h1,
+h2{
+    margin-bottom: 15px;
+}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+  
+}
+
+.navbar{
+    background: #1F2937;
+    color: #fff;
+    height: 60px;
+}
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.navbar a:hover{
+    color: lightblue;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar ul {
+    display: flex;
+    
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.header{
+    background-color: #1F2937;
+    color: #fff;
+    min-height: 400px;
+}
+
+.header h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    line-height: 1.2;
+}
+
+.header p{
+    font-size: 17px;
+    color: #e5e7eb;
+    padding-bottom: 15px;
+}
+
+.header button{
+    text-decoration: none;
+    border: none;
+    padding: 12px 40px;
+    font-size: 16px;
+    background-color: #3882F6;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+    margin-bottom: 20px;
+    
+}
+.header button:active{
+    transform: scale(0.97);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+.header img{
+    min-height: 200px;
+
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+
+.information .container img{
+    max-width: 150px;
+    object-fit: cover;
+    height: 150px;
+}
+
+.information .container{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.information h1{
+    margin: 40px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+}
+
+.information figcaption{
+    font-size: 10px;
+    max-width: 200px;
+}
+
+.quotes{
+    background-color: #e5e7eb;
+}
+
+.quotes .container{
+    max-width: 400px;
+    height: 200px;
+    display: flex;
+    
+}
+.quotes span {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    
+}
+
+.quotes div{
+    justify-content: center;
+    align-items: center;
+}
+.call-to-action{
+    height: 400px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.call-to-action .container{
+    display: flex;
+    height: 100px;
+   
+}
+.call-to-action span{
+    font-weight: bold;
+}
+
+.call-to-action div{
+    display: inline-block;
+    justify-content: center;
+    
+    align-self: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #3882f6;
+    color: #fff;
+    padding: 20px;
+    width: 80%;
+    height: 100px;
+}
+
+.call-to-action button{
+    font-size: 20px;
+    color: #fff;
+    background-color: #3882f6;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    padding: 15px;
+    width: 15%;
+    height: auto;
+
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #1F2937;
+    color: #fff;
+    bottom: 0px;
+    margin-bottom: 0;
+  }
+
+.footer .container {
+    padding: 0;
+    
+}
+
+
+@media(max-width: 500px){
+    .header .container{
+        flex-direction:column;
+        text-align: center;
+        
+        padding-top: 20px;
+        text-align: center;
+    }
+    .information .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        /* flex-wrap: wrap; */
+        margin-bottom: 20px;
+    }
+
+    .information .container img{
+        
+        max-width: 100px;
+        object-fit: cover;
+        height: 60px;
+    }
+
+    .quotes .container{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction:column;
+      }
+}
